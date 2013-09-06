@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: "play";
+	src: url(../fonts/play-regular.ttf);
+}
+
+h1{
+	font: bold 24px play !important;
+}
+h2{
+	font: bold 18px play ;
+	color: #333;
+	margin: 10px;
+}
+h4{
+	font: bold 18px play ;
+	color: #FFF;
+	margin: 10px;
+}
+p{
+	font: 14px/18px Arial, Helvetica, sans-serif;
+	margin: 10px;
+}
+
+body {
+	font: 13px/18px Tahoma, Geneva, sans-serif;
+	color:#333;
+	text-align:justify;
+	background: url(../images/bg.jpg) !important;
+}
+.bg_2{
+	background: url(../images/bg-2.jpg) !important;
+}
+.clear {
+	clear: both;
+	height: 0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.powered{
+	width: 200px;
+	font: 14px/33px Arial, Helvetica, sans-serif;
+	color: #FFF;
+	text-shadow: none;
+	position: absolute;
+	bottom: 20px;
+	left: 30%;
+	background:url(../images/innomind-logo.png) right no-repeat;
+}
+.header {
+	background: #000 !important;
+	width: 100%;
+	height: 88px;
+	display: block;
+}
+.landing_logo{
+	width: 80%;
+	margin:0 auto;
+	margin-top: 25%;
+}
+.logo {
+	width: 250px;
+	margin:0 auto;
+	padding: 10px 0px;
+}
+.landing_logo img, .logo img{
+	width: 100%;
+}
+.top-right {
+	float: right;
+	width: 130px;
+}
+.phone {
+	width: 70%;
+	height: 55px;
+	background: url(../images/phone.png) no-repeat top center;
+	background-size: contain;
+	margin:0 auto;
+	display: block;
+	text-indent: -9999px;
+	margin-top: 15px;
+}
+.view {
+	width: 139px;
+	height: 19px;
+	background: url(../images/view.jpg) no-repeat;
+	float: right;
+	margin: 0px 5px;
+	display: block;
+	text-indent: -9999px;
+}
+.top {
+	background: #000;
+	color: #fff;
+	z-index: 9999;
+	overflow: hidden;
+}
+.button {
+	background: #063;
+}
+.nav {
+	width: 100%;
+	padding-top: 4px;
+	height: auto;
+	margin-top:10px;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+}
+.nav ul li {
+	display: inline;
+}
+.nav ul li a {
+	overflow: hidden;
+	color: #333 !important;
+	text-shadow: none;
+	float: left;
+	padding: 0px .5%;
+	text-align: center;
+	width: 47%;
+	height: 150px;
+	margin: 0 .7%;
+	font: normal 16px play;
+	margin-bottom: 1%;
+	text-decoration:none;
+}
+.nav ul li a:hover, nav ul li a:active, nav ul li a.selected_ {
+	font: normal 16px play;
+	
+}
+.nav ul li a:hover > img, nav ul li a:active > img, nav ul li a.selected_ img {
+	opacity: 1;
+}
+
+.heading{
+	background:#66be6a;
+	font: 18px/37px Arial, Helvetica, sans-serif;
+	color:#FFF;
+	text-align:center;
+	position:relative;
+	text-shadow: none;
+}
+.back-btn{
+	display:block;
+	background:url(../images/back.png) no-repeat 10px 10px;
+	width:50px;
+	height: 45px;
+	position:absolute;
+	left: 3px;
+	top: 3px;
+	text-indent:-999px;
+}
+.share-btn{
+	display:block;
+	background:url(../images/share.png) no-repeat 10px 7px;
+	width:50px;
+	height: 45px;
+	text-indent:-999px;
+}
+ul{
+	margin:0 0 0 15px;
+	padding:0;
+}
+ul.listing{
+	margin:10px;
+	padding:0;
+}
+ul.listing li{
+	list-style-image: url(../images/list-style.png);
+	list-style-position:inside;
+	font: bold 13px/24px Arial, Helvetica, sans-serif;
+}
+ul.listing2{
+	margin:10px;
+	padding:0;
+}
+ul.listing2 li{
+	list-style-image: url(../images/list-style-2.png);
+	list-style-position:inside;
+	font: bold 13px/24px Arial, Helvetica, sans-serif;
+}
+ul.listing3{
+	margin:0;
+	padding:0;
+}
+ul.listing3 li{
+	float:left;
+	width: 40%;
+	text-align:center;
+	list-style:none;
+	margin-top: 10px;
+	margin: 5%;
+}
+ul.listing3 li img{
+	border: 2px #666 solid;
+	width: 100%;
+}
+ul.listing3 li img:hover{
+	border: 2px #2da4d3 solid;
+}
+ul.listing3 li a{
+	font: bold 13px/24px play;
+	color: #333 !important;
+	text-decoration:none;
+}
+ul.listing3 li a:hover{
+	color: #2da4d3 !important;
+}
+ul.testi{
+	margin:0;
+	padding:0;
+}
+ul.testi li{
+	list-style:none;
+	border-bottom: 1px #ccc solid;
+}
+.email{
+	background:url(../images/mail.png) no-repeat;
+	padding-left: 30px;
+}
+.email a{
+	font: 14px/23px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #333 !important;
+}
+.email a:hover{
+	color: #2DA4D3 !important;
+}
+.phone_no{
+	background:url(../images/phone-icon.png) no-repeat;
+	padding-left: 30px;
+	font: 14px/23px Arial, Helvetica, sans-serif;
+}
+.input{
+	background: #FFF !important;
+}
