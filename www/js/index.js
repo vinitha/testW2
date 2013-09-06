@@ -65,10 +65,10 @@ var app = {
 
 
     blog: function(){
-        function getBlogs() {
+      
             var dfd = $.Deferred();
             $.ajax({
-                url: 'http://dynmsales.com/?json=get_recent_posts&post_type=testimonial',
+                url: 'http://dynmsales.com/api/get_page/?id=133',
                 type: 'GET',
                 dataType: 'json',
                 success: function(data){
@@ -85,13 +85,9 @@ var app = {
                 }
             });
             return dfd.promise();
-        };
+       
 
-        getBlogs().then(function(data){
-            $('#all-posts').on('click','li', function(e){                
-                localStorage.setItem('postData', JSON.stringify(data.posts[$(this).index()]));
-            });
-        });
+      
 
         
     },
