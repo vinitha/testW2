@@ -44,13 +44,15 @@ var app = {
     blogHome: function(){
    
             var dfd = $.Deferred();
+				$.support.cors = true;
+  $.mobile.allowCrossDomainPages = true;
             $.ajax({
-                url: 'http://dynmsales.com/api/get_page/?id=133',
+                url: 'http://alexbachuk.com/api/get_recent_posts/',
                 type: 'GET',
                 dataType: 'json',
                 success: function(data){
                                   
-                    $('#home-content').html(data);
+                    $('#home-content').html(data.title);
                    
                     dfd.resolve(data);
 
