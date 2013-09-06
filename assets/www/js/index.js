@@ -52,7 +52,7 @@ var app = {
                 dataType: 'json',
                 success: function(data){
                                   
-                    $('#home-content').html(data.title);
+                    $('#home-content').html("helloooooooooooo");
                    
                     dfd.resolve(data);
 
