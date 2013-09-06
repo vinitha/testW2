@@ -22,8 +22,12 @@
 
         <script id="blog-template" type="text/x-handlebars-template">
             <ul data-role="listview" data-inset="true" id="all-posts">
-           <h1>{{title}}</h1>
-            {{{content}}}
+            
+            {{#each posts}}
+                
+                <li><a data-transition="slide" href="single.html?{{@index}}">{{title}}</a></li>
+
+            {{/each}}
             </ul>
         </script>
 

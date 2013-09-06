@@ -65,9 +65,10 @@ var app = {
 
 
     blog: function(){
+        function getBlogs() {
             var dfd = $.Deferred();
             $.ajax({
-                url: 'http://dynmsales.com/api/get_page/?id=133',
+                url: 'http://alexbachuk.com/api/get_recent_posts/',
                 type: 'GET',
                 dataType: 'json',
                 success: function(data){
@@ -84,7 +85,13 @@ var app = {
                 }
             });
             return dfd.promise();
-      
+        };
+
+        getBlogs().then(function(data){
+            $('#all-posts').on('click','li', function(e){                
+                localStorage.setItem('postData', JSON.stringify(data.posts[$(this).index()]));
+            });
+        });
 
         
     },
