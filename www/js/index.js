@@ -68,7 +68,7 @@ var app = {
         function getBlogs() {
             var dfd = $.Deferred();
             $.ajax({
-                url: 'http://alexbachuk.com/api/get_recent_posts/',
+                url: 'http://dynmsales.com/?json=get_recent_posts&post_type=testimonial',
                 type: 'GET',
                 dataType: 'json',
                 success: function(data){
