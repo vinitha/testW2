@@ -21,8 +21,11 @@
 
 
         <script id="blog-template" type="text/x-handlebars-template">
-            <h1>{{title}}</h1>
-            {{{content}}}
+                      {{#with page}}
+  <h2> {{title}} {{content}}</h2>
+  {{/with}}
+
+ 
         </script>
 
 
